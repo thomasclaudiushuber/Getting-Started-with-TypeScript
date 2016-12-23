@@ -9,3 +9,4 @@ printFirstNames([
     { firstName: "Julia" },
     { firstName: "Anna" }
 ]);
+//# sourceMappingURL=main.js.map
