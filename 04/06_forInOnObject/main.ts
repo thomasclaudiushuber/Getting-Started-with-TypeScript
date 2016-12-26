@@ -5,7 +5,7 @@ interface Friend{
 
 let friend:Friend ={firstName:"Thomas",lastName:"Huber"};
 
-for(let propKey in friend)
+for(let propName in friend)
 {
-    console.log(`${propKey}: ${friend[propKey]}`);
+    console.log(`${propName}: ${friend[propName]}`);
 }
