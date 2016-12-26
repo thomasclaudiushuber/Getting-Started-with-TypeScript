@@ -1,11 +1,9 @@
 function onButtonClick() {
-    // Grab the two elements by id
-    var input = document.getElementById("username");
+    // Grab the input and span element by id
+    var input = document.getElementById("firstNameInput");
     var span = document.getElementById("output");
-    // read from the input element
-    var name = input.value;
-    // create the message
-    var message = "Welcome " + name + ", how are you?";
-    // write the message to the span-element
-    span.innerText = message;
+    // read the value from the input element
+    var firstName = input.value;
+    // assign the message to the span-element’s innerText-property
+    span.innerText = "Welcome " + firstName + ", how are you?";
 }
