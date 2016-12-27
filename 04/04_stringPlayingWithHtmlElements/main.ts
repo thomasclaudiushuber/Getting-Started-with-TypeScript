@@ -1,12 +1,13 @@
-function onButtonClick() 
+function onKeyUp()
 {
-    // Grab the input and span element by id
-    let input = document.getElementById("firstNameInput");
-    let span = document.getElementById("output");
+  // Grab the input element and its value
+  let input = document.getElementById("myInput") as HTMLInputElement;   
+  let firstname= input.value;
 
-    // read the value from the input element
-    let firstName = (input as HTMLInputElement).value;
-
-    // assign the message to the span-element’s innerText-property
-    span.innerText = `Welcome ${ firstName }, how are you?`;
+  // Grab the output element
+  let output = document.getElementById("myOutput");
+  
+  // assign the message to the span-element’s innerText-property
+  output.innerText = `Hi ${firstname},
+your firstname length is ${firstname.trim().length}!`;
 }
