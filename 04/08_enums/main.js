@@ -5,7 +5,7 @@ var Dock;
     Dock[Dock["right"] = 2] = "right";
     Dock[Dock["bottom"] = 3] = "bottom";
 })(Dock || (Dock = {}));
-let dock = Dock.top;
+var dock = Dock.top;
 console.log(typeof dock);
 console.log(dock);
 console.log(Dock[dock]);
