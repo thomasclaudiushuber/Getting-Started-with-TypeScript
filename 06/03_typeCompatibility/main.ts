@@ -8,4 +8,4 @@ class Friend {
 }
 
 // This works due to "structural typing" of TypeScript
-let dev:Developer = new Friend();
+let dev: Developer = new Friend();

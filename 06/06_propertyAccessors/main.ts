@@ -1,14 +1,11 @@
-class Friend
-{
-    private _firstName:string;
+class Friend {
+    private _firstName: string;
 
-    set firstName(value:string)
-    {
+    set firstName(value: string) {
         this._firstName = value;
     }
 
-    get firstName():string
-    {
+    get firstName(): string {
         return this._firstName;
     }
 }
