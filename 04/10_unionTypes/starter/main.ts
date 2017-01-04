@@ -1,17 +1,14 @@
-function append(text: string, appendix: any): string
- {
-    if (typeof appendix === "number") 
-    {
+function append(text: string, appendix: any): string {
+    if (typeof appendix === "number") {
         return text + Array(appendix).join(" ");
     }
-    if (typeof appendix === "string")
-    {
+    if (typeof appendix === "string") {
         return text + appendix;
     }
     throw new Error("appendix must be string or number");
 }
-console.log(append("Thomas"," Claudius ") + "Huber");
+console.log(append("Thomas", " Claudius ") + "Huber");
 
-console.log(append("Thomas",10) + "Huber");
+console.log(append("Thomas", 10) + "Huber");
 
-append("Thomas",true); // Runtime-error, as boolean is passed in
+append("Thomas", true); // Runtime-error, as boolean is passed in

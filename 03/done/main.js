@@ -4,9 +4,5 @@ function printFirstNames(friends) {
         console.log(friend.firstName);
     }
 }
-printFirstNames([
-    { firstName: "Thomas" },
-    { firstName: "Julia" },
-    { firstName: "Anna" }
-]);
+printFirstNames(7);
 //# sourceMappingURL=main.js.map

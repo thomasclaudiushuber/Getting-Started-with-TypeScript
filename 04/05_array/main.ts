@@ -1,11 +1,9 @@
-let firstnames:string[] = ["Julia","Anna","Thomas"];
+let firstnames: string[] = ["Julia", "Anna", "Thomas"];
 
-for(let firstname of firstnames)
-{
-   console.log(firstname);
+for (let firstname of firstnames) {
+    console.log(firstname);
 }
 
-for(let index in firstnames)
-{
+for (let index in firstnames) {
     console.log(`${index} - ${firstnames[index]}`);
 }

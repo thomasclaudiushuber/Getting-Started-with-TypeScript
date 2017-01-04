@@ -6,9 +6,9 @@ isVisible1 = "hidden"; // ERROR: string not assignable to type boolean
 let isVisible2;
 isVisible2 = true;
 isVisible2 = "hidden"; // WORKS, as type cannot be infered
- 
+
 // Declaration and assignment split: With type
-let isVisible3:boolean;
+let isVisible3: boolean;
 isVisible3 = true;
 isVisible3 = "hidden"; // ERROR: string not assignable to type boolean
 

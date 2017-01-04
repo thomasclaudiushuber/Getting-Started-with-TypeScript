@@ -1,11 +1,8 @@
-function append(text: string, appendix: string | number): string
-{
-    if (typeof appendix === "number")
-    {
+function append(text: string, appendix: string | number): string {
+    if (typeof appendix === "number") {
         return text + Array(appendix).join(" ");
     }
-    if (typeof appendix === "string")
-    {
+    if (typeof appendix === "string") {
         return text + appendix;
     }
 }
