@@ -8,5 +8,6 @@ function getFullName(firstName) {
 console.log(getFullName("Thomas"));
 console.log(getFullName("Thomas", "Huber"));
 console.log(getFullName("Thomas", "Claudius", "Huber"));
+console.log(getFullName("Thomas", "Claudius", "Huber", "Developer"));
 var additionalNames = ["Claudius", "Huber"];
 console.log(getFullName.apply(void 0, ["Thomas"].concat(additionalNames)));
