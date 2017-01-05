@@ -1,6 +1,6 @@
 interface IRepository<T> {
-  GetAll(): T[];
-  Insert(item: T): void;
+  getAll(): T[];
+  insert(item: T): void;
 }
 
 class Friend {
@@ -9,20 +9,20 @@ class Friend {
 
 class FriendRepo implements IRepository<Friend> {
   private _items = new Array<Friend>();
-  GetAll() {
+  getAll() {
     return this._items;
   }
-  Insert(item: Friend): void {
+  insert(item: Friend): void {
     this._items.push(item);
   }
 }
 
 let repo = new FriendRepo();
-repo.Insert(new Friend("Thomas"));
-repo.Insert(new Friend("Julia"));
-repo.Insert(new Friend("Anna"));
+repo.insert(new Friend("Thomas"));
+repo.insert(new Friend("Julia"));
+repo.insert(new Friend("Anna"));
 
-for(let friend of repo.GetAll())
+for(let friend of repo.getAll())
 {
   console.log(friend.firstName);
 }
