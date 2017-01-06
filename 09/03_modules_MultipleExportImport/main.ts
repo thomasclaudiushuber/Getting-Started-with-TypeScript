@@ -1,4 +1,4 @@
-import { Developer,Skateboarder } from './friends.js';
+import { Developer,Skateboarder } from './friends';
 
 var dev = new Developer("Julia");
 dev.knowsTypeScript = true;
