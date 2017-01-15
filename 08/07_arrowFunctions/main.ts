@@ -1,5 +1,8 @@
+interface AdminNameCallback {
+    (adminName: string): void
+}
 class DataLoader {
-    loadAdminName(callback: (adminName: string) => void) {
+    loadAdminName(callback: AdminNameCallback) {
         callback("Thomas");
     }
 }
