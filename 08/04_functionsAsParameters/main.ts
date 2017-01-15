@@ -4,7 +4,7 @@ class DataLoader {
     }
 }
 
-var loader = new DataLoader();
+let loader = new DataLoader();
 loader.LoadAdminName(function (loadedName: string) {
     console.log(loadedName);
 })
