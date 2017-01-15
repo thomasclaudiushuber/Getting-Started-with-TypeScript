@@ -1,5 +1,5 @@
 class DataLoader {
-    LoadAdminName(callback: (adminName: string) => void) {
+    loadAdminName(callback: (adminName: string) => void) {
         callback("Thomas");
     }
 }
@@ -14,7 +14,7 @@ class AdminController {
 
     loadName() {
         // Use arrow function, and this points to the AdminController-instance
-        this.dataLoader.LoadAdminName((loadedName) => {
+        this.dataLoader.loadAdminName((loadedName) => {
             this._adminName = loadedName;
         })
     }

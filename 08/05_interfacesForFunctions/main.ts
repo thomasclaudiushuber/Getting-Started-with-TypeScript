@@ -3,12 +3,12 @@ interface AdminNameCallback {
 }
 
 class DataLoader {
-    LoadAdminName(callback:AdminNameCallback) {
+    loadAdminName(callback:AdminNameCallback) {
         callback("Thomas");
     }
 }
 
 let loader = new DataLoader();
-loader.LoadAdminName(function (loadedName: string) {
+loader.loadAdminName(function (loadedName: string) {
     console.log(loadedName);
 })
