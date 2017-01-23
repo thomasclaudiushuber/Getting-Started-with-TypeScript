@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Getting started with TypeScript</title>
@@ -9,7 +10,9 @@
             baseURL: '/',
             defaultJSExtensions: true
         });
-        System.import('./main.js').then(function(){console.log('loaded');}).catch(function(err){ console.error(err); });
+        System.import('./main')
+          .then(function(){console.log('loaded');})
+          .catch(function(err){ console.error(err); });
     </script>
       <p>Look in the browser's console</p>
   </body>
