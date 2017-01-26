@@ -1,37 +1,35 @@
-function logChanges(target:any,key:string){
-   // grab the value
-   let value = this[key];
+function logAccess(target: Object, propertyKey: string) {
+    // grab the value
+    let value = this[propertyKey];
 
-   // define a setter
-   let setter=(newValue)=>{
-      value=newValue;
-      console.log(`set ${key}: ${value}`);
-   };
-   // define a getter
-   let getter=()=>{
-      console.log(`get ${key}: ${value}`);
-      return value;
-   };
+    // define a setter
+    let setter = (newValue) => {
+        value = newValue;
+        console.log(`set ${propertyKey}: ${value}`);
+    };
 
-   // replace the property
-   if(delete this[key])
-   {
-       Object.defineProperty(
-           target,key,{
-               configurable:true,
-               enumerable:true,
-               get:getter,
-               set:setter
-           });
-   }
+    // define a getter
+    let getter = () => {
+        console.log(`get ${propertyKey}: ${value}`);
+        return value;
+    };
+
+    // replace the property
+    if (delete this[propertyKey]) {
+        Object.defineProperty(
+            target, propertyKey, {
+                get: getter,
+                set: setter
+            });
+    }
 }
 
 class Friend {
-    @logChanges
-    name:string;
+    @logAccess
+    name: string;
 }
 
 let friend = new Friend();
-friend.name="Thomas";
-friend.name="Julia";
+friend.name = "Thomas";
+friend.name = "Julia";
 let theName = friend.name;
