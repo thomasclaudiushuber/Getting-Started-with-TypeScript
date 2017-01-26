@@ -1,25 +1,27 @@
-interface ComponentDataByType{
-    type:string;
-    compData:ComponentData
-}
-
-let dataByType: ComponentDataByType[] = [];
+import 'reflect-metadata';
 
 interface ComponentData {
-    creator: string;
+    firstName: string;
+    lastName: string;
 }
+
+let componentDataKey = "componentData";
 
 function Component(data: ComponentData) {
     return function Component(target: Function) {
-           dataByType.push({type:target.name,compData:data});
+        Reflect.defineMetadata(componentDataKey, data, target);
     }
 }
 
+
 @Component({
-    creator: "Thomas"
+    firstName: "Thomas",
+    lastName: "Huber"
 })
 class Friend {
 }
 
-console.log(dataByType[0].type);
-console.log(dataByType[0].compData.creator);
+
+let compData = Reflect.getMetadata(componentDataKey, Friend) as ComponentData;
+console.log(compData.firstName); // Logs "Thomas"
+console.log(compData.lastName); // Logs "Huber"

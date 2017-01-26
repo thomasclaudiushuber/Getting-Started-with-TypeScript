@@ -1,0 +1,20 @@
+{
+  "name": "typescript-book-lodash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" "
+  },
+  "author": "Thomas Claudius Huber",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "systemjs": "^0.19.41"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.50",
+    "concurrently": "^3.1.0",
+    "lite-server": "^2.2.2"
+  }
+}

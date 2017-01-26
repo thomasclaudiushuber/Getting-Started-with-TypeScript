@@ -2,9 +2,16 @@
 <html>
   <head>
     <title>Getting started with TypeScript</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
   </head>
   <body>
+    <script>
+        SystemJS.config({
+            baseURL: '/',
+            defaultJSExtensions: true
+        });
+        System.import('./main.js').then(function(){console.log('loaded');}).catch(function(err){ console.error(err); });
+    </script>
       <p>Look in the browser's console</p>
-      <script src="main.js"></script>
   </body>
 </html>
