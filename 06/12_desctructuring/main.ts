@@ -30,9 +30,9 @@ let {firstName} = loadFriend();
 console.log(firstName);
 
 // 4. destructure an array
-let numbers:number[]=[1,2,3,4];
+let numbers: number[] = [1, 2, 3, 4];
 
-let [first,second] = numbers;
+let [first, second] = numbers;
 
 console.log(first);
 console.log(second);
