@@ -14,9 +14,9 @@ import { Component } from '@angular/core';
   styles: [`.isSelected{font-weight:bold;}`]
 })
 export class AppComponent {
-  friends:Friend[] = FRIENDLIST;
+  friends: Friend[] = FRIENDLIST;
 
-  onFriendSelect(friend:Friend) {
+  onFriendSelect(friend: Friend) {
     this.selectedFriend = friend;
   }
 
