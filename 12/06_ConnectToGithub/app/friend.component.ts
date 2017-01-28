@@ -14,7 +14,7 @@ import 'rxjs/add/operator/map';
         <label>github:</label>
         <span>{{friend.github}}</span>
     </div>
-    <h2>Github repos of {{friend.name}}</h2>
+    <h2>GitHub repos of {{friend.name}}</h2>
     <table>
         <tr>
           <th>Name</th>

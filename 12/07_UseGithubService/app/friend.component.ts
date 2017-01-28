@@ -14,7 +14,7 @@ import { Component, Input, OnChanges } from '@angular/core';
         <label>github:</label>
         <span>{{friend.github}}</span>
     </div>
-    <h2>Github repos</h2>
+    <h2>GitHub repos</h2>
     <table>
         <tr>
           <th>Name</th>
