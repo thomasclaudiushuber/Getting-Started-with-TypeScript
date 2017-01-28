@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
             {{friend.name}}
       </li>
     </ul>
-    <div *ngIf="selectedFriend">
+    <div *ngIf="selectedFriend != null">
       <div>
         <label>name:</label>
         <input type="text" [(ngModel)]="selectedFriend.name">
