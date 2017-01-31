@@ -1,16 +1,8 @@
-System.register(["./friends.js"], function (exports_1, context_1) {
-    "use strict";
-    var __moduleName = context_1 && context_1.id;
-    var friends_js_1, dev;
-    return {
-        setters: [
-            function (friends_js_1_1) {
-                friends_js_1 = friends_js_1_1;
-            }
-        ],
-        execute: function () {
-            dev = new friends_js_1.Developer("Thomas");
-            dev.knowsTypeScript = true;
-        }
-    };
-});
+"use strict";
+var friends_1 = require("./friends"); // The "Coder" is the default export from the friends module
+var prog = new friends_1.default("Thomas");
+prog.knowsTypeScript = true;
+console.log(prog.firstName);
+console.log("Knows TypeScript: " + prog.knowsTypeScript);
+var friend = new friends_1.Friend("Julia");
+console.log(friend.firstName);
