@@ -1,5 +1,5 @@
 "use strict";
-var friends_1 = require("./friends"); // The "Coder" is the default export from the friends module
+var friends_1 = require("./friends"); // The  is the default import
 var prog = new friends_1.default("Thomas");
 prog.knowsTypeScript = true;
 console.log(prog.firstName);

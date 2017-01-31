@@ -1,4 +1,4 @@
-import Coder, { Friend } from './friends'; // The "Coder" is the default export from the friends module
+import Coder, { Friend } from './friends'; // The  is the default import
 
 var prog = new Coder("Thomas");
 prog.knowsTypeScript = true;
