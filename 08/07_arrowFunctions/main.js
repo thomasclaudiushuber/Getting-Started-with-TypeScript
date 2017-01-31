@@ -1,7 +1,7 @@
 var DataLoader = (function () {
     function DataLoader() {
     }
-    DataLoader.prototype.LoadAdminName = function (callback) {
+    DataLoader.prototype.loadAdminName = function (callback) {
         callback("Thomas");
     };
     return DataLoader;
@@ -18,7 +18,7 @@ var AdminController = (function () {
     AdminController.prototype.loadName = function () {
         var _this = this;
         // Use arrow function, and this points to the AdminController-instance
-        this.dataLoader.LoadAdminName(function (loadedName) {
+        this.dataLoader.loadAdminName(function (loadedName) {
             _this._adminName = loadedName;
         });
     };
