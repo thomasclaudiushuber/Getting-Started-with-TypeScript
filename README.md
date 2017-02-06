@@ -2,7 +2,7 @@
 
 Hi there! 
 
-This repository contains the samples of the book **Getting Started with TypeScript**. You can order the book on amazon via this link: 
+This repository contains the samples of the book **Getting Started with TypeScript**. 
 
 The folders of this repository are matching the chapter-numbers of the book:
 
@@ -20,3 +20,9 @@ The folders of this repository are matching the chapter-numbers of the book:
 12. Angular with TypeScript
 
 Happy coding! :)
+
+You can order the book on amazon via this link from Amazon.com:
+https://www.amazon.com/Getting-Started-TypeScript-Introduction-Angular-ebook/dp/B01MULZ5FA
+
+Or here from Amazon.de
+https://www.amazon.de/Getting-Started-TypeScript-Introduction-Angular-ebook/dp/B01MULZ5FA
